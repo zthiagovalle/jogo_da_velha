@@ -6,10 +6,6 @@ import (
 	"github.com/zthiagovalle/jogo_da_velha/cmd/api/handlers"
 )
 
-type HashGame struct {
-	Matriz [3][3]string `json:"matriz"`
-}
-
 func main() {
 	app := fiber.New()
 	app.Use(cors.New())
